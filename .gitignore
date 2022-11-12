@@ -1,0 +1,5 @@
+.htaccess
+package-lock.json
+package.json
+sitemap.xml
+web/.htpasswd

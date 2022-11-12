@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<meta lang="es">
+	<link rel="icon" type="image/png" href="IMG/server3.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>DarkSnakeX Network</title>
+</head>
+
+<style>
+ 	@font-face {
+   font-family: myFirstFont;
+   src: url(8bitOperatorPlus-Bold.ttf);
+}
+
+.spinner {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+}
+.spinner:before,
+.spinner:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 3px;
+  background-color: #ffffff;
+  border-radius: 1.5px;
+  -webkit-transform-origin: 50% 0%;
+  transform-origin: 50% 0%;
+}
+.spinner:before {
+  height: 9px;
+  left: 13.5px;
+  top: 50%;
+  -webkit-animation: spin 2000ms linear infinite;
+  animation: spin 2000ms linear infinite;
+}
+.spinner:after {
+  height: 12px;
+  left: 13.5px;
+  top: 50%;
+  -webkit-animation: spin 500ms linear infinite;
+  animation: spin 500ms linear infinite;
+}
+
+@-webkit-keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+</style>
+
+<body>
+
+<div class="cabecera" id="micabecera">
+  <a href="./index.html">DarkSnakeX</a>
+  <a href="./redacted.html">[REDACTED]</a>
+  <a href="">Almacén</a>
+  <a href="#contacto">Contacto</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+
+</div>
+
+
+<div class="inicio">
+	    <h1>Almacen de archivos</h1>
+</div>
+
+<div class="spinner"></div>
+
+<div class="yo" id="yo">
+	    <p>Si estas viendo esto significa que el almacen esta fuera de cobertura o no se ha cargado correctamente, porfavor contacte con DarkSnakeX para mas informacion</p>
+	</div>
+
+<div class="almacen" id="almacen">
+</div>
+<!---
+
+I'm everywhere, and yet, nowhere
+I feel so empty
+
+--->
+<script>
+function myFunction() {
+  var x = document.getElementById("micabecera");
+  if (x.className === "cabecera") {
+    x.className += " responsive";
+  } else {
+    x.className = "cabecera";
+  }
+}
+</script>
+
+
+</body>
+
+
+</html>

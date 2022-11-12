@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8"> 
+	<meta lang="es">
+	<link rel="icon" type="image/png" href="IMG/server3.jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>DarkSnakeX Network</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<style>
+ 	@font-face {
+   font-family: myFirstFont;
+   src: url(8bitOperatorPlus-Bold.ttf);
+}
+
+</style>
+
+<body>
+
+
+
+<div class="cabecera" id="micabecera">
+  <a href="./index.html">DarkSnakeX</a>
+  <a href="./redacted.html">[REDACTED]</a>
+  <a href="./almacen.html">Almacén</a>
+	<a href="#contacto">Contacto</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
+<div class="inicio">
+	    <h1>Baúl secreto de DarkSnakeX</h1>
+</div>
+
+<div class="yo" id="yo">
+	<img src="IMG/ojos.gif" width="400"></img>
+	</div>
+
+<div class="almacen" id="almacen">
+		<h2>Bienvenido usuario</h2>
+    <p>Si has llegado aqui has encontrado la pagina secreta de DarkSnakeX (todo un logro), normalmente esta pagina contiene cosas basicas que usa DarkSnakeX y otras que mas bien, bueno... No te recomiendo buscar donde no te llaman, despues de todo, es de mala educacion hablar de alguien que te esta escuchando...</p>
+</div>
+
+<!---
+
+Beware of the man who speaks in hands
+Try anything stupid and you will see what happens next
+
+--->
+
+
+
+<div class="alerta">
+  <span class="cerraralerta" onclick="this.parentElement.style.display='none';">&#10003;</span> 
+  <strong>Aviso:</strong> Si continuas usando esta pagina web, aceptas el uso de <a href="./cookies.html">cookies</a>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("micabecera");
+  if (x.className === "cabecera") {
+    x.className += " responsive";
+  } else {
+    x.className = "cabecera";
+  }
+}
+</script>
+
+
+
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,178 @@
+body{
+    background-color: black;
+    font-family: myfirstfont;
+    margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+/*Cambia el div o palabra/frase de un hipervinculo para el color que yo quiera*/
+a:visited{
+  color: #BDC3C7;
+}
+
+a:link{
+  color: #BDC3C7;
+}
+
+a:hover{
+  color: #979B9D;
+}
+
+
+/*Colores de varias etiquetas tipo del HTML*/
+p{
+  color: white;
+}
+
+h1{
+  color: white;
+}
+
+h2{
+  color: white;
+}
+
+
+/* Contenido de abajo del todo donde estan las redes sociales, el copy, etc... */
+.abajo{
+  background-color: #222222;
+  padding: -100px;
+  bottom: 0%;
+  overflow: auto;
+  position: relative;
+}
+
+.abajo a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 2px 4px;
+  text-decoration: none;
+}
+
+
+/* Contenido principal de la pagina */
+.inicio{
+  padding: 50px;
+  width: auto;
+  transition: 1s;
+  text-align: center;
+  text-anchor: start;
+}
+
+/* Contenido principal de la pagina 2*/
+.yo{
+  background-color: black;
+  padding: -120px;
+  width: auto;
+  transition: 1s;
+  text-align: center;
+  position: relative;
+}
+
+
+
+
+/* Contenido principal de la pagina 3*/
+.almacen{
+  background-color: black;
+  padding: 60px;
+  width: auto;
+  transition: 1s;
+  text-decoration-color: white;
+}
+
+/* Contenido principal de la pagina 4*/
+.contacto{
+  background-color: black;
+  padding: 150px;
+  width: auto;
+  transition: 1s;
+}
+
+/* Menu de links */
+.cabecera {
+  overflow: hidden;
+  background: #222222;
+}
+
+/* Botones de cada link */
+.cabecera a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+/* Cambiar el aspecto al pasar el raton por encima u algo */
+.cabecera a:hover {
+  background-color: black;
+  color: white;
+}
+
+.cabecera a.activate {
+  background-color: darkred;
+  color: white;
+}
+
+.cabecera .icon {
+  display: none;
+}
+
+/* Minicajita de alerta sobre el tema de las cookies*/
+.alerta {
+  position: fixed;
+  bottom: 10%;
+  padding: 10px;
+  background-color: #f44336;
+  color: white;
+  transition: 5s;
+}
+
+.cerraralerta {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.cerraralerta:hover {
+  color: green;
+}
+
+
+/*Detecta el tamaño de la pantalla para el tema de la cabecera*/
+@media screen and (max-width: 700px) {
+  .cabecera a:not(:first-child) {display: none;}
+  .cabecera a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .cabecera.responsive {position: relative;}
+  .cabecera.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .cabecera.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
